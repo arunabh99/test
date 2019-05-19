@@ -1,4 +1,4 @@
-#Preprocessing of the CEL files
+#Preprocessing of CEL files
 
 source("http://bioconductor.org/biocLite.R")
 biocLite('huex10sttranscriptcluster.db')
@@ -42,7 +42,7 @@ write.table(final, file = "annotated file.txt")
 
 ###########################
 
-#METHOD 2: USING annotationDB
+# using annotationDB
 
 #Extract transcript clusterIDs
 probes=row.names(new)
@@ -60,6 +60,3 @@ head(new)
 write.table(new, file = "input_wgcna.txt", quote = FALSE, sep = "\t", row.names = FALSE, col.names = TRUE)
 
 ################################################
-
-
-
